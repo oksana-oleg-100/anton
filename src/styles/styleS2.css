@@ -1,0 +1,73 @@
+          .s2itemsContainer {
+            width: calc(100% - 0px);
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .s2moreContainer {
+            overflow: visible;
+            display: inherit;
+            white-space: nowrap;
+            width: auto;
+            background-color: transparent;
+            border-radius: 0;
+          }
+          
+          .s2dropWrapper {
+            z-index: 99999;
+            display: block;
+            opacity: 1;
+            visibility: hidden;
+            position: absolute;
+            margin-top: 7px;
+          }
+          
+          .s2dropWrapper[data-dropMode="dropUp"] {
+            margin-top: 0;
+            margin-bottom: 7px;
+          }
+          
+          .s2repeaterButton {
+            height: 100%;
+            position: relative;
+            box-sizing: border-box;
+            display: inline-block;
+            cursor: pointer;
+            font: normal normal normal 14px/1.1em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+          }
+          
+          .s2repeaterButton[data-state~="header"] a,
+          .s2repeaterButton[data-state~="header"] div {
+            cursor: default !important;
+          }
+          
+          .s2repeaterButton_gapper {
+            padding: 0 3px;
+          }
+          
+          .s2repeaterButtonlabel {
+            display: inline-block;
+            padding: 0 10px;
+            color: #440202;
+            transition: color 0.4s ease 0s;
+          }
+          
+          .s2repeaterButton[data-state~="drop"] {
+            width: 100%;
+            display: block;
+          }
+          
+          .s2repeaterButton[data-state~="drop"] .s2repeaterButtonlabel {
+            padding: 0 .5em;
+          }
+          
+          .s2repeaterButton[data-state~="over"] .s2repeaterButtonlabel {
+            color: #FFFFFF;
+            transition: color 0.4s ease 0s;
+          }
+          
+          .s2repeaterButton[data-state~="selected"] .s2repeaterButtonlabel {
+            color: #880505;
+            transition: color 0.4s ease 0s;
+          }
