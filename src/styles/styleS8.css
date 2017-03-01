@@ -1,0 +1,27 @@
+          .s8_zoomedin {
+            cursor: url(http://static.parastorage.com/services/skins/2.1229.63/images/wysiwyg/core/themes/base/cursor_zoom_out.png), url(http://static.parastorage.com/services/skins/2.1229.63/images/wysiwyg/core/themes/base/cursor_zoom_out.cur), auto;
+            overflow: hidden;
+            display: block;
+          }
+          
+          .s8_zoomedout {
+            cursor: url(http://static.parastorage.com/services/skins/2.1229.63/images/wysiwyg/core/themes/base/cursor_zoom_in.png), url(http://static.parastorage.com/services/skins/2.1229.63/images/wysiwyg/core/themes/base/cursor_zoom_in.cur), auto;
+          }
+          
+          .s8link {
+            display: block;
+            overflow: hidden;
+          }
+          
+          .s8img {
+            overflow: hidden;
+          }
+          
+          .s8imgimage {
+            position: static;
+            box-shadow: #000 0 0 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
