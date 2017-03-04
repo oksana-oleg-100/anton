@@ -1,0 +1,23 @@
+                    .s10bg {
+                        overflow: hidden;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.6);
+                    }
+                    
+                    .s10[data-state~="mobileView"] .s10bg {
+                        left: 10px;
+                        right: 10px;
+                    }
+                    
+                    .s10inlineContent {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        bottom: 20px;
+                    }
