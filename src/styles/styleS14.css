@@ -1,0 +1,23 @@
+                    .s14bg {
+                        overflow: hidden;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background-color: rgba(243, 224, 179, 0.5);
+                    }
+                    
+                    .s14[data-state~="mobileView"] .s14bg {
+                        left: 10px;
+                        right: 10px;
+                    }
+                    
+                    .s14inlineContent {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        bottom: 20px;
+                    }
