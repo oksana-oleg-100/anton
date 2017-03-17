@@ -1,0 +1,61 @@
+                    .s16[data-state~="shouldUseFlex"] .s16link,
+                    .s16[data-state~="shouldUseFlex"] .s16labelwrapper {
+                        text-align: initial;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                    }
+                    
+                    .s16[data-state~="shouldUseFlex"][data-state~="center"] .s16link,
+                    .s16[data-state~="shouldUseFlex"][data-state~="center"] .s16labelwrapper {
+                        -webkit-box-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                    }
+                    
+                    .s16[data-state~="shouldUseFlex"][data-state~="left"] .s16link,
+                    .s16[data-state~="shouldUseFlex"][data-state~="left"] .s16labelwrapper {
+                        -webkit-box-pack: start;
+                        -webkit-justify-content: flex-start;
+                        justify-content: flex-start;
+                    }
+                    
+                    .s16[data-state~="shouldUseFlex"][data-state~="right"] .s16link,
+                    .s16[data-state~="shouldUseFlex"][data-state~="right"] .s16labelwrapper {
+                        -webkit-box-pack: end;
+                        -webkit-justify-content: flex-end;
+                        justify-content: flex-end;
+                    }
+                    
+                    .s16[data-disabled="false"] {
+                        cursor: pointer;
+                    }
+                    
+                    .s16[data-disabled="false"]:active[data-state~="mobile"] .s16label,
+                    .s16[data-disabled="false"]:hover[data-state~="desktop"] .s16label {
+                        color: #F4A582;
+                        transition: color 0.4s ease 0s;
+                    }
+                    
+                    .s16link {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    
+                    .s16label {
+                        font: normal normal normal 16px/1.3em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+                        transition: color 0.4s ease 0s;
+                        color: #CC0808;
+                        white-space: nowrap;
+                        display: inline-block;
+                    }
+                    
+                    .s16[data-disabled="true"] .s16label {
+                        color: #FFFFFF;
+                    }

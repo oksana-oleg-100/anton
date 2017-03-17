@@ -1,0 +1,61 @@
+                    .s19[data-state~="shouldUseFlex"] .s19link,
+                    .s19[data-state~="shouldUseFlex"] .s19labelwrapper {
+                        text-align: initial;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                    }
+                    
+                    .s19[data-state~="shouldUseFlex"][data-state~="center"] .s19link,
+                    .s19[data-state~="shouldUseFlex"][data-state~="center"] .s19labelwrapper {
+                        -webkit-box-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                    }
+                    
+                    .s19[data-state~="shouldUseFlex"][data-state~="left"] .s19link,
+                    .s19[data-state~="shouldUseFlex"][data-state~="left"] .s19labelwrapper {
+                        -webkit-box-pack: start;
+                        -webkit-justify-content: flex-start;
+                        justify-content: flex-start;
+                    }
+                    
+                    .s19[data-state~="shouldUseFlex"][data-state~="right"] .s19link,
+                    .s19[data-state~="shouldUseFlex"][data-state~="right"] .s19labelwrapper {
+                        -webkit-box-pack: end;
+                        -webkit-justify-content: flex-end;
+                        justify-content: flex-end;
+                    }
+                    
+                    .s19[data-disabled="false"] {
+                        cursor: pointer;
+                    }
+                    
+                    .s19[data-disabled="false"]:active[data-state~="mobile"] .s19label,
+                    .s19[data-disabled="false"]:hover[data-state~="desktop"] .s19label {
+                        color: #F4A582;
+                        transition: color 0.4s ease 0s;
+                    }
+                    
+                    .s19link {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    
+                    .s19label {
+                        font: normal normal normal 22px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+                        transition: color 0.4s ease 0s;
+                        color: #9F370B;
+                        white-space: nowrap;
+                        display: inline-block;
+                    }
+                    
+                    .s19[data-disabled="true"] .s19label {
+                        color: #FFFFFF;
+                    }
